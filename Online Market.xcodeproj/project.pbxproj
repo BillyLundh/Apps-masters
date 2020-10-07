@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		D128A443252E2973000CF03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D128A441252E2973000CF03D /* Main.storyboard */; };
 		D128A445252E297A000CF03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D128A444252E297A000CF03D /* Assets.xcassets */; };
 		D128A448252E297A000CF03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D128A446252E297A000CF03D /* LaunchScreen.storyboard */; };
+		D128A464252E2D1E000CF03D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128A463252E2D1E000CF03D /* LogInViewController.swift */; };
+		D128A468252E2D49000CF03D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128A467252E2D49000CF03D /* SignUpViewController.swift */; };
+		D128A46B252E2F6E000CF03D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D128A46A252E2F6E000CF03D /* Login.storyboard */; };
+		D128A46D252E2FA6000CF03D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D128A46C252E2FA6000CF03D /* SignUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		D128A444252E297A000CF03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D128A447252E297A000CF03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D128A449252E297A000CF03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D128A463252E2D1E000CF03D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D128A467252E2D49000CF03D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D128A46A252E2F6E000CF03D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D128A46C252E2FA6000CF03D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +79,35 @@
 		D128A43A252E2973000CF03D /* Online Market */ = {
 			isa = PBXGroup;
 			children = (
+				D128A462252E2BE5000CF03D /* ViewController */,
+				D128A460252E2BC7000CF03D /* StoryBoards */,
 				D128A43B252E2973000CF03D /* AppDelegate.swift */,
 				D128A43D252E2973000CF03D /* SceneDelegate.swift */,
-				D128A43F252E2973000CF03D /* ViewController.swift */,
-				D128A441252E2973000CF03D /* Main.storyboard */,
 				D128A444252E297A000CF03D /* Assets.xcassets */,
 				D128A446252E297A000CF03D /* LaunchScreen.storyboard */,
 				D128A449252E297A000CF03D /* Info.plist */,
 			);
 			path = "Online Market";
+			sourceTree = "<group>";
+		};
+		D128A460252E2BC7000CF03D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D128A441252E2973000CF03D /* Main.storyboard */,
+				D128A46A252E2F6E000CF03D /* Login.storyboard */,
+				D128A46C252E2FA6000CF03D /* SignUp.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D128A462252E2BE5000CF03D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D128A43F252E2973000CF03D /* ViewController.swift */,
+				D128A463252E2D1E000CF03D /* LogInViewController.swift */,
+				D128A467252E2D49000CF03D /* SignUpViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F9261F880A9D9A61471F2770 /* Pods */ = {
@@ -88,7 +116,6 @@
 				5DC5C6D156B40504420E4067 /* Pods-Online Market.debug.xcconfig */,
 				02ECF5AE5816189192E653B2 /* Pods-Online Market.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,9 +178,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D128A46B252E2F6E000CF03D /* Login.storyboard in Resources */,
 				D128A448252E297A000CF03D /* LaunchScreen.storyboard in Resources */,
 				D128A445252E297A000CF03D /* Assets.xcassets in Resources */,
 				D128A443252E2973000CF03D /* Main.storyboard in Resources */,
+				D128A46D252E2FA6000CF03D /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D128A464252E2D1E000CF03D /* LogInViewController.swift in Sources */,
 				D128A440252E2973000CF03D /* ViewController.swift in Sources */,
 				D128A43C252E2973000CF03D /* AppDelegate.swift in Sources */,
 				D128A43E252E2973000CF03D /* SceneDelegate.swift in Sources */,
+				D128A468252E2D49000CF03D /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
